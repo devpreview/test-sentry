@@ -1,3 +1,3 @@
 import * as Sentry from "@sentry/browser";
-//Sentry.init({});
+Sentry.init({});
 console.log('main');
