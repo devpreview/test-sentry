@@ -21,3 +21,13 @@ console.log('main');
 ```
 
 ![Console](https://habrastorage.org/webt/tg/g1/ja/tgg1jancvp613rw2fsxz04ns-lc.png)
+
+## Solution
+
+Turn off Breadcrumbs console integration
+
+```
+Sentry.init({
+    integrations: [new Sentry.Integrations.Breadcrumbs({console: false})]
+});
+```

@@ -1,3 +1,6 @@
 import * as Sentry from "@sentry/browser";
-Sentry.init({});
+
+Sentry.init({
+    integrations: [new Sentry.Integrations.Breadcrumbs({console: false})]
+});
 console.log('main');
